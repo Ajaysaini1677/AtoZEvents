@@ -511,36 +511,52 @@ BOOKING FORM
 <h2>Book Your Event</h2>
 </div>
 
-<form class="quote-form" name="contact" method="POST" data-netlify="true">
+<form class="quote-form"
+      name="contact"
+      method="POST"
+      data-netlify="true">
 
-<input type="text" name="Full_Name" placeholder="Full Name" required>
+    <input type="hidden" name="form-name" value="contact">
 
-<input type="email" name="email" placeholder="Email Address" required>
+    <input type="text"
+           name="full_name"
+           placeholder="Full Name"
+           required>
 
-<input type="tel" name="contact" placeholder="Phone Number" required>
+    <input type="email"
+           name="email"
+           placeholder="Email Address"
+           required>
 
-<select name="Event-type">
-<option>Select Event Type</option>
-<option>Wedding</option>
-<option>Corporate</option>
-<option>Celebration</option>
-<option>Exhibition</option>
-<option>Vendor Requirement</option>
-</select>
+    <input type="tel"
+           name="contact"
+           placeholder="Phone Number"
+           required>
 
-<input type="date" name="date">
+    <select name="event_type" required>
+        <option value="">Select Event Type</option>
+        <option value="Wedding">Wedding</option>
+        <option value="Corporate">Corporate</option>
+        <option value="Celebration">Celebration</option>
+        <option value="Exhibition">Exhibition</option>
+        <option value="Vendor Requirement">Vendor Requirement</option>
+    </select>
 
-<input type="text" name="venue-location"placeholder="Venue Location">
+    <input type="date" name="event_date">
 
-<textarea name="message" rows="5"
-placeholder="Tell us about your event"></textarea>
+    <input type="text"
+           name="venue_location"
+           placeholder="Venue Location">
 
-<button type="submit">
-Get Free Quote
-</button>
+    <textarea name="message"
+              rows="5"
+              placeholder="Tell us about your event"></textarea>
+
+    <button type="submit">
+        Get Free Quote
+    </button>
 
 </form>
-
 </div>
 
 </section>
