@@ -164,62 +164,71 @@ our team is ready to help.
 
 <h3>Request A Free Quote</h3>
 
-<form name="contact" method="POST" netlify>
+<form name="contact" method="POST" data-netlify="true">
 
-<div class="form-group">
+    <input type="hidden" name="form-name" value="contact">
 
-<input type="text"
-placeholder="Full Name"
-required>
+    <div class="form-group">
 
-<input type="email"
-placeholder="Email Address"
-required>
+        <input
+            type="text"
+            name="full_name"
+            placeholder="Full Name"
+            required>
 
-</div>
+        <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required>
 
-<div class="form-group">
+    </div>
 
-<input type="tel"
-placeholder="Phone Number"
-required>
+    <div class="form-group">
 
-<select required>
+        <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            required>
 
-<option value="">
-Select Event Type
-</option>
+        <select
+            name="event_type"
+            required>
 
-<option>Wedding</option>
+            <option value="">
+                Select Event Type
+            </option>
 
-<option>Corporate Event</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Corporate Event">Corporate Event</option>
+            <option value="Birthday Celebration">Birthday Celebration</option>
+            <option value="Exhibition">Exhibition</option>
+            <option value="Vendor Partnership">Vendor Partnership</option>
 
-<option>Birthday Celebration</option>
+        </select>
 
-<option>Exhibition</option>
+    </div>
 
-<option>Vendor Partnership</option>
+    <input
+        type="date"
+        name="event_date">
 
-</select>
+    <input
+        type="text"
+        name="event_location"
+        placeholder="Event Location">
 
-</div>
+    <textarea
+        rows="6"
+        name="message"
+        placeholder="Tell us about your event"></textarea>
 
-<input type="date">
-
-<input type="text"
-placeholder="Event Location">
-
-<textarea rows="6"
-placeholder="Tell us about your event"></textarea>
-
-<button type="submit">
-
-Send Inquiry
-
-</button>
+    <button type="submit">
+        Send Inquiry
+    </button>
 
 </form>
-
 </div>
 
 </div>
