@@ -267,23 +267,23 @@ document.addEventListener("DOMContentLoaded", () => {
        FORM SUBMISSION
     ========================== */
 
-    const form = document.querySelector(".quote-form");
+//     const form = document.querySelector(".quote-form");
 
-if (form) {
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
+// if (form) {
+//     form.addEventListener("submit", (e) => {
+//         e.preventDefault();
 
-        const button = form.querySelector("button");
+//         const button = form.querySelector("button");
 
-        button.innerText = "Sending...";
+//         button.innerText = "Sending...";
 
-        setTimeout(() => {
-            alert("Thank you!");
-            form.reset();
-            button.innerText = "Get Free Quote";
-        }, 1500);
-    });
-}
+//         setTimeout(() => {
+//             alert("Thank you!");
+//             form.reset();
+//             button.innerText = "Get Free Quote";
+//         }, 1500);
+//     });
+// }
 
     /* ==========================
        HERO PARALLAX EFFECT
