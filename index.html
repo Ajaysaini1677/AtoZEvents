@@ -511,15 +511,15 @@ BOOKING FORM
 <h2>Book Your Event</h2>
 </div>
 
-<form class="quote-form">
+<form class="quote-form" name="contact" method="POST" data-netlify="true">
 
-<input type="text" placeholder="Full Name" required>
+<input type="text" name="Full_Name" placeholder="Full Name" required>
 
-<input type="email" placeholder="Email Address" required>
+<input type="email" name="email" placeholder="Email Address" required>
 
-<input type="tel" placeholder="Phone Number" required>
+<input type="tel" name="contact" placeholder="Phone Number" required>
 
-<select>
+<select name="Event-type">
 <option>Select Event Type</option>
 <option>Wedding</option>
 <option>Corporate</option>
@@ -528,11 +528,11 @@ BOOKING FORM
 <option>Vendor Requirement</option>
 </select>
 
-<input type="date">
+<input type="date" name="date">
 
-<input type="text" placeholder="Venue Location">
+<input type="text" name="venue-location"placeholder="Venue Location">
 
-<textarea rows="5"
+<textarea name="message" rows="5"
 placeholder="Tell us about your event"></textarea>
 
 <button type="submit">
